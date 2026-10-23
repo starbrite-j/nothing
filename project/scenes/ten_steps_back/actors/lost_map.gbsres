@@ -1,0 +1,163 @@
+{
+  "_resourceType": "actor",
+  "id": "7dfbd9c0-a1d2-52b9-9d87-6d8b3530ca2a",
+  "_index": 1,
+  "symbol": "actor_lost_map",
+  "prefabId": "",
+  "name": "Lost map",
+  "coordinateType": "tiles",
+  "x": 4,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "78d1f501-3bdf-5e7a-80fe-9e896a3ff2ec",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "5137b60e-5b06-5882-ab09-44ac58295736",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "2"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "01bf7daa-9b27-53d4-883b-0a031d5cde2c",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "3"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "41fdbb80-c444-54d1-95dc-c8806c18f83a",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "3",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  }
+                },
+                {
+                  "id": "a9347dc8-fa7c-5729-b85c-b536134be580",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Map found!"
+                    ],
+                    "textHeight": 3,
+                    "minHeight": 5,
+                    "maxHeight": 5
+                  }
+                },
+                {
+                  "id": "8678705c-e417-5dc0-a145-061c712fe776",
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "frequency": 660,
+                    "duration": 0.12,
+                    "wait": true,
+                    "priority": "medium"
+                  }
+                },
+                {
+                  "id": "cf3e48cc-4638-5bb0-8f4a-73c1bb3336fb",
+                  "command": "EVENT_SAVE_DATA",
+                  "args": {
+                    "saveSlot": 0
+                  },
+                  "children": {
+                    "true": [],
+                    "load": [
+                      {
+                        "id": "1978d700-daf4-5deb-a176-112d3322f4a2",
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "89df2690-39f3-5dc7-8edd-3975813d427f",
+                          "x": {
+                            "type": "number",
+                            "value": 4
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 11
+                          },
+                          "direction": "up",
+                          "fadeSpeed": "2"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "8b243e89-e9fe-5e06-81e3-30a2a04d8e01",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Map collected."
+                    ],
+                    "textHeight": 3,
+                    "minHeight": 5,
+                    "maxHeight": 5
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "9fc09434-4747-5e07-a7ee-29224074c35a",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A lost map.\nWho dropped it?"
+              ],
+              "textHeight": 3,
+              "minHeight": 5,
+              "maxHeight": 5
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

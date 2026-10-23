@@ -1,0 +1,1087 @@
+[
+  {
+    "input": {
+      "buttons": [
+        "start"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 120
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 40
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100,
+      "snapshot": "map-accepted"
+    },
+    "observed": {
+      "scene": "_scene_ten_steps_back",
+      "variables": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 40
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "left"
+      ],
+      "frames": 80
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "up"
+      ],
+      "frames": 8
+    }
+  },
+  {
+    "input": {
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 40
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "right"
+      ],
+      "frames": 80
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "up"
+      ],
+      "frames": 8
+    }
+  },
+  {
+    "input": {
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 120
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 40
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "down"
+      ],
+      "frames": 16
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "right"
+      ],
+      "frames": 150
+    }
+  },
+  {
+    "input": {
+      "frames": 100,
+      "snapshot": "room2-after-fix"
+    },
+    "observed": {
+      "scene": "_scene_ask_first",
+      "variables": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "left"
+      ],
+      "frames": 8
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "up"
+      ],
+      "frames": 8
+    }
+  },
+  {
+    "input": {
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 40
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 150,
+      "snapshot": "consent-detour"
+    },
+    "observed": {
+      "scene": "_scene_shortcut_tax",
+      "variables": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "input": {
+      "restart": true,
+      "snapshot": "power-cycle-title"
+    },
+    "observed": {
+      "scene": "_scene_start",
+      "variables": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "start"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 150,
+      "snapshot": "power-cycle-detour"
+    },
+    "observed": {
+      "scene": "_scene_shortcut_tax",
+      "variables": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "right"
+      ],
+      "frames": 90
+    }
+  },
+  {
+    "input": {
+      "frames": 100,
+      "snapshot": "retry-no-speech"
+    },
+    "observed": {
+      "scene": "_scene_shortcut_tax",
+      "variables": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "right"
+      ],
+      "frames": 18,
+      "snapshot": "jump-start"
+    },
+    "observed": {
+      "scene": "_scene_shortcut_tax",
+      "variables": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "right",
+        "a"
+      ],
+      "frames": 30
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "right"
+      ],
+      "frames": 25,
+      "snapshot": "first-gap"
+    },
+    "observed": {
+      "scene": "_scene_shortcut_tax",
+      "variables": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "right",
+        "a"
+      ],
+      "frames": 30
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "right"
+      ],
+      "frames": 15
+    }
+  },
+  {
+    "input": {
+      "frames": 20,
+      "snapshot": "second-gap"
+    },
+    "observed": {
+      "scene": "_scene_shortcut_tax",
+      "variables": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "right",
+        "a"
+      ],
+      "frames": 40
+    }
+  },
+  {
+    "input": {
+      "frames": 25
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "right"
+      ],
+      "frames": 35
+    }
+  },
+  {
+    "input": {
+      "frames": 80,
+      "snapshot": "detour-won"
+    },
+    "observed": {
+      "scene": "_scene_shortcut_tax",
+      "variables": [
+        0,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100,
+      "snapshot": "back-to-question"
+    },
+    "observed": {
+      "scene": "_scene_ask_first",
+      "variables": [
+        0,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 40
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "down"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 120
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 40
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "right"
+      ],
+      "frames": 60
+    }
+  },
+  {
+    "input": {
+      "frames": 100,
+      "snapshot": "cracked-sign"
+    },
+    "observed": {
+      "scene": "_scene_ask_first",
+      "variables": [
+        0,
+        2,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 40
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 120
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 40
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "left"
+      ],
+      "frames": 40
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "up"
+      ],
+      "frames": 8
+    }
+  },
+  {
+    "input": {
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 120,
+      "snapshot": "sign-fixed"
+    },
+    "observed": {
+      "scene": "_scene_own_it",
+      "variables": [
+        0,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 80
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "right"
+      ],
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "frames": 200,
+      "snapshot": "ending-1"
+    },
+    "observed": {
+      "scene": "_scene_absolutely_nothing",
+      "variables": [
+        0,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "input": {
+      "frames": 60,
+      "snapshot": "ending-2"
+    },
+    "observed": {
+      "scene": "_scene_absolutely_nothing",
+      "variables": [
+        0,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "input": {
+      "restart": true
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "start"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 200,
+      "snapshot": "ending-restored"
+    },
+    "observed": {
+      "scene": "_scene_absolutely_nothing",
+      "variables": [
+        0,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "start"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 40
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "down"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100,
+      "snapshot": "restart-declined"
+    },
+    "observed": {
+      "scene": "_scene_absolutely_nothing",
+      "variables": [
+        0,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "start"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 40
+    }
+  },
+  {
+    "input": {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    }
+  },
+  {
+    "input": {
+      "frames": 100,
+      "snapshot": "new-run"
+    },
+    "observed": {
+      "scene": "_scene_ten_steps_back",
+      "variables": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+]

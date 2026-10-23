@@ -1,0 +1,44 @@
+{
+  "_resourceType": "trigger",
+  "id": "4b836c1c-27bc-5f17-8fa5-900f4d9204cf",
+  "_index": 1,
+  "symbol": "trigger_pit_18",
+  "prefabId": "",
+  "name": "tax - Pit 18",
+  "x": 18,
+  "y": 16,
+  "width": 3,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "11f5ef63-5c59-51c6-b4ca-fb859d13f143",
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "tone",
+        "frequency": 130,
+        "duration": 0.1,
+        "wait": true,
+        "priority": "medium"
+      }
+    },
+    {
+      "id": "13535b3c-5ba8-59c1-8442-2e0f21c1c039",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "e6815d2f-0042-5b62-a863-f1d71c35f3fd",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      }
+    }
+  ],
+  "leaveScript": []
+}

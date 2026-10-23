@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "7d47b9af-b36d-5062-85cc-14f9f968e46c",
+  "name": "tax",
+  "symbol": "bg_tax",
+  "tileColors": "",
+  "filename": "tax.png",
+  "width": 40,
+  "height": 18,
+  "imageWidth": 320,
+  "imageHeight": 144,
+  "autoColor": false
+}

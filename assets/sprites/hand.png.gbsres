@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "39a0ac4d-c3f4-5678-a389-a82d2e5e2456",
+  "name": "hand",
+  "symbol": "sprite_hand",
+  "states": [
+    {
+      "id": "9c866063-d6db-55ec-b80c-3f3e1203477b",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "14fa9220-9f43-5b4b-8be3-b4474d869c90",
+          "frames": [
+            {
+              "id": "c26b16ea-83bf-526c-8f29-4f8ee9a05634",
+              "tiles": [
+                {
+                  "id": "63ed5d27-db33-5205-a957-cf4966e92917",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "e6c86e59-d1e2-5644-a290-c7dada48feef",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "113b659f-1f04-58fa-b2f4-0b883efd1c6a",
+          "frames": [
+            {
+              "id": "1bd9fe66-62d8-570b-b94f-e4bc384f3293",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "205bc686-303a-5a60-91bf-61c2444332ca",
+          "frames": [
+            {
+              "id": "f392120b-2ce9-5055-ae9e-75cb1d1923f6",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "0d630bbb-ae1d-55ba-b4e6-96b439bea2f0",
+          "frames": [
+            {
+              "id": "5faded4b-ce78-54a1-9592-737a054342d5",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5672daba-0a9c-547c-bb75-958ea98f334d",
+          "frames": [
+            {
+              "id": "099ea1e9-720c-59ca-aa03-cc780a9d5f5b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "fba275dd-175f-58b2-8e89-4e35b5493e0a",
+          "frames": [
+            {
+              "id": "3aedcfc8-0bee-56eb-8034-724a00e0ba5f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a3e151f5-73bc-523a-a02c-585bd687a2b7",
+          "frames": [
+            {
+              "id": "dc7f8aa4-4594-5fed-9892-970d9cdc0075",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "babd2780-9232-597a-b75a-d606a0439da6",
+          "frames": [
+            {
+              "id": "d1781831-fdba-5875-a3ac-4897f7c81cae",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "hand.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "a14c97cdd07f415d23ab6c307ae8ea2b516c09df"
+}

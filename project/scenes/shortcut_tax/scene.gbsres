@@ -1,0 +1,175 @@
+{
+  "_resourceType": "scene",
+  "id": "e6815d2f-0042-5b62-a863-f1d71c35f3fd",
+  "_index": 4,
+  "type": "PLATFORM",
+  "name": "Shortcut Tax",
+  "symbol": "scene_shortcut_tax",
+  "x": 1280,
+  "y": 0,
+  "width": 40,
+  "height": 18,
+  "backgroundId": "7d47b9af-b36d-5062-85cc-14f9f968e46c",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "cfc3c391-ef3f-56cf-bb71-9f23f671e4d6",
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "558e7373-f996-5947-a918-6ca5f44027e0",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "7acc8be3-4f6f-5d9c-9e07-892938de117a",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "PAUSED\nSave checkpoint?"
+              ],
+              "textHeight": 3,
+              "minHeight": 5,
+              "maxHeight": 5
+            }
+          },
+          {
+            "id": "eb93a112-e4fd-5625-a0f1-32f8155f50c1",
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "9",
+              "trueText": "YES",
+              "falseText": "NO"
+            }
+          },
+          {
+            "id": "c1a96b81-8103-5d27-bcbc-5fb4ecdac766",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "9"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "4d9eb10f-542d-5e77-ab06-5bccf9703d48",
+                  "command": "EVENT_SAVE_DATA",
+                  "args": {
+                    "saveSlot": 0
+                  },
+                  "children": {
+                    "true": [],
+                    "load": [
+                      {
+                        "id": "07a09109-f284-529e-8563-eec0c738c2cc",
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "e6815d2f-0042-5b62-a863-f1d71c35f3fd",
+                          "x": {
+                            "type": "number",
+                            "value": 2
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 12
+                          },
+                          "direction": "up",
+                          "fadeSpeed": "2"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "9d78ced4-5505-5ce4-b83a-d102706a06d2",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Saved."
+                    ],
+                    "textHeight": 3,
+                    "minHeight": 5,
+                    "maxHeight": 5
+                  }
+                }
+              ],
+              "false": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "3cd5121f-a84f-5746-a9a1-9ffa05706a1f",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "10"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "71c51e3e-b8d3-55c1-945b-f11ed351f00e",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "SHORTCUT TAX\nYOU MUST BEAT IT\nTO GET OUT.",
+                "D-PAD: MOVE\nA: JUMP\nREACH THE FLAG"
+              ],
+              "textHeight": 3,
+              "minHeight": 5,
+              "maxHeight": 5
+            }
+          },
+          {
+            "id": "15ce3e81-8b72-527e-9356-6aa6e8532f2b",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "10",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00230+0f8+003+0f7+003+0f7+003+0f11+003+0f7+003+0f7+003+0f11+003+0f7+003+0f7+003+0f11+003+0f7+003+0f7+003+0f9+"
+}

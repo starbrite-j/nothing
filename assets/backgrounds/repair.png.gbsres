@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "1af9ee24-533f-5895-a4c0-cd46b3c12e10",
+  "name": "repair",
+  "symbol": "bg_repair",
+  "tileColors": "",
+  "filename": "repair.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

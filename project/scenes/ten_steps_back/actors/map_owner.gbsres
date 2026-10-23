@@ -1,0 +1,363 @@
+{
+  "_resourceType": "actor",
+  "id": "c7f234b7-1401-5adc-8ec9-c41400114717",
+  "_index": 0,
+  "symbol": "actor_map_owner",
+  "prefabId": "",
+  "name": "Map owner",
+  "coordinateType": "tiles",
+  "x": 14,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "926c3fa9-9543-5af3-bf00-03ce92f3f54e",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "2478888f-33f0-54cd-9e86-5fc37786d81e",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "67c76ae0-066a-5302-8217-b3ee9375f5a6",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The east path\nis open."
+              ],
+              "textHeight": 3,
+              "minHeight": 5,
+              "maxHeight": 5
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "1a7f9ddc-7054-56b0-a32b-22f62b31a940",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "3"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "6cfd9b1c-1963-54a4-8cce-98bc3db422f4",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "That's my map!\nLook: a gap in\nthe maze wall."
+                    ],
+                    "textHeight": 3,
+                    "minHeight": 5,
+                    "maxHeight": 5
+                  }
+                },
+                {
+                  "id": "3b6fba31-e508-5021-8360-6a260cf58d72",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "4",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  }
+                },
+                {
+                  "id": "c94fc464-afa9-577e-a080-bdb67238d46c",
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "frequency": 880,
+                    "duration": 0.12,
+                    "wait": true,
+                    "priority": "medium"
+                  }
+                },
+                {
+                  "id": "85f8ca3c-09d5-57d1-9e2b-0d36cdc4389d",
+                  "command": "EVENT_SAVE_DATA",
+                  "args": {
+                    "saveSlot": 0
+                  },
+                  "children": {
+                    "true": [],
+                    "load": [
+                      {
+                        "id": "790c70e0-8994-5f28-8cdb-704fc5684081",
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "89df2690-39f3-5dc7-8edd-3975813d427f",
+                          "x": {
+                            "type": "number",
+                            "value": 14
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 11
+                          },
+                          "direction": "up",
+                          "fadeSpeed": "2"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "7c93076c-c790-5c3b-934e-fcfb59df14f9",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "2"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "6778ef01-1ac3-5d3a-9518-6432c0cbc991",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Please return\nmy missing map."
+                          ],
+                          "textHeight": 3,
+                          "minHeight": 5,
+                          "maxHeight": 5
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "45e33c35-276a-5934-bfbe-95dd61b62141",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "My map is ten\ntiles back. The\npath is safe.",
+                            "Will you fetch\nit?"
+                          ],
+                          "textHeight": 3,
+                          "minHeight": 5,
+                          "maxHeight": 5
+                        }
+                      },
+                      {
+                        "id": "ddec3a52-9436-5bf4-aa8d-a7cb720acee3",
+                        "command": "EVENT_CHOICE",
+                        "args": {
+                          "variable": "9",
+                          "trueText": "YES",
+                          "falseText": "NO"
+                        }
+                      },
+                      {
+                        "id": "4ea81c68-0875-5399-8d61-d2051d48f04e",
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "9"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 1
+                            }
+                          }
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "id": "5d60ad3f-d3a9-5a98-8f46-485533386f19",
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "2",
+                                "value": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              }
+                            },
+                            {
+                              "id": "86f1bb86-200a-54ef-82b0-11bb61ade2bb",
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Thanks! Bring it\nback here."
+                                ],
+                                "textHeight": 3,
+                                "minHeight": 5,
+                                "maxHeight": 5
+                              }
+                            },
+                            {
+                              "id": "cca553c8-c4c6-536c-a99a-0ed55931820a",
+                              "command": "EVENT_SAVE_DATA",
+                              "args": {
+                                "saveSlot": 0
+                              },
+                              "children": {
+                                "true": [],
+                                "load": [
+                                  {
+                                    "id": "76f699c8-31d2-5576-a13f-03f91c5a8b5a",
+                                    "command": "EVENT_SWITCH_SCENE",
+                                    "args": {
+                                      "sceneId": "89df2690-39f3-5dc7-8edd-3975813d427f",
+                                      "x": {
+                                        "type": "number",
+                                        "value": 14
+                                      },
+                                      "y": {
+                                        "type": "number",
+                                        "value": 11
+                                      },
+                                      "direction": "up",
+                                      "fadeSpeed": "2"
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ],
+                          "false": [
+                            {
+                              "id": "4614ebb0-9506-5702-9a1f-0f80cb57e4a0",
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "0",
+                                "value": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              }
+                            },
+                            {
+                              "id": "83c742a1-7561-5b9f-9370-33762afb9b05",
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "1",
+                                "value": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              }
+                            },
+                            {
+                              "id": "6667ae8d-de59-5144-bd00-7aeb48a3246e",
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "10",
+                                "value": {
+                                  "type": "number",
+                                  "value": 0
+                                }
+                              }
+                            },
+                            {
+                              "id": "7fc3c005-c13a-5469-be62-ec0214a61e94",
+                              "command": "EVENT_SAVE_DATA",
+                              "args": {
+                                "saveSlot": 0
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "id": "088ae973-cf68-5fe4-b19c-3f0888d07caa",
+                                    "command": "EVENT_SWITCH_SCENE",
+                                    "args": {
+                                      "sceneId": "e6815d2f-0042-5b62-a863-f1d71c35f3fd",
+                                      "x": {
+                                        "type": "number",
+                                        "value": 2
+                                      },
+                                      "y": {
+                                        "type": "number",
+                                        "value": 12
+                                      },
+                                      "direction": "up",
+                                      "fadeSpeed": "2"
+                                    }
+                                  }
+                                ],
+                                "load": [
+                                  {
+                                    "id": "30662600-c5d9-52ea-84bc-5cf4194e9c6e",
+                                    "command": "EVENT_SWITCH_SCENE",
+                                    "args": {
+                                      "sceneId": "e6815d2f-0042-5b62-a863-f1d71c35f3fd",
+                                      "x": {
+                                        "type": "number",
+                                        "value": 2
+                                      },
+                                      "y": {
+                                        "type": "number",
+                                        "value": 12
+                                      },
+                                      "direction": "up",
+                                      "fadeSpeed": "2"
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,192 @@
+{
+  "_resourceType": "trigger",
+  "id": "6fa21ec6-4ea4-5033-889e-01c9182d9509",
+  "_index": 0,
+  "symbol": "trigger_repair_gate",
+  "prefabId": "",
+  "name": "repair - Repair gate",
+  "x": 16,
+  "y": 8,
+  "width": 1,
+  "height": 5,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "2c15351f-22b0-5b8b-b2ca-f1b9d594d392",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "6fef6a40-43c9-5afe-98f4-e4c1d8d43b3a",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "5"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "e635f938-67a2-5c46-bea9-71e30e947e30",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "7"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "7bf629ff-dd3d-5a1c-b5ea-f72a5bfb07bf",
+                        "command": "EVENT_SAVE_DATA",
+                        "args": {
+                          "saveSlot": 0
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "id": "db44f481-e022-5e61-ad34-162fd8fcd6b0",
+                              "command": "EVENT_SWITCH_SCENE",
+                              "args": {
+                                "sceneId": "68feb75d-73f3-542b-9b19-24104dcc205e",
+                                "x": {
+                                  "type": "number",
+                                  "value": 9
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 12
+                                },
+                                "direction": "up",
+                                "fadeSpeed": "2"
+                              }
+                            }
+                          ],
+                          "load": [
+                            {
+                              "id": "ce0e7de1-12da-5956-b19a-00e0141224ea",
+                              "command": "EVENT_SWITCH_SCENE",
+                              "args": {
+                                "sceneId": "68feb75d-73f3-542b-9b19-24104dcc205e",
+                                "x": {
+                                  "type": "number",
+                                  "value": 9
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 12
+                                },
+                                "direction": "up",
+                                "fadeSpeed": "2"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "149074db-cf9f-558b-b055-1b80eb0dda9d",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "The sign must be\nrepaired first."
+                          ],
+                          "textHeight": 3,
+                          "minHeight": 5,
+                          "maxHeight": 5
+                        }
+                      },
+                      {
+                        "id": "55cd88c5-cd8d-5c7a-b72b-8ae4369aeb8c",
+                        "command": "EVENT_ACTOR_SET_POSITION",
+                        "args": {
+                          "actorId": "player",
+                          "x": {
+                            "type": "number",
+                            "value": 13
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 10
+                          },
+                          "units": "tiles"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "8c1ab372-6d27-59d1-8f86-eab60435a34c",
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 13
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "units": "tiles"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "effcdbb7-5857-5b59-a75f-b9664599c2c9",
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 13
+              },
+              "y": {
+                "type": "number",
+                "value": 10
+              },
+              "units": "tiles"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "leaveScript": []
+}

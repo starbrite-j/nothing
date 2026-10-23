@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "1bd71411-787c-591d-a834-fadc630da813",
+  "name": "consent",
+  "symbol": "bg_consent",
+  "tileColors": "",
+  "filename": "consent.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "926c3fa9-9543-5af3-bf00-03ce92f3f54e",
+  "name": "traveler",
+  "symbol": "sprite_traveler",
+  "states": [
+    {
+      "id": "d6cc6d88-ee19-5b5e-9af0-ad7920551ae2",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "13023283-b6e1-563d-9072-a351ac317a22",
+          "frames": [
+            {
+              "id": "db091960-506a-56d1-b62c-6483b6cf8789",
+              "tiles": [
+                {
+                  "id": "0cb0c018-8ec0-5e48-bf70-08d0cae858e3",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "050c0515-a09b-5afa-b58f-d90cfe74fa62",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "58aeea66-fcc5-5eb1-8ca8-5e37e117b14b",
+          "frames": [
+            {
+              "id": "6f01b97a-4543-5db6-b5ba-30f0b7007924",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "994ff9b5-606c-5228-b1ed-fbd918f04642",
+          "frames": [
+            {
+              "id": "c20a8747-5546-512b-b7da-2c910e51c0b0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ee265778-ee06-513c-b98d-9400bb590677",
+          "frames": [
+            {
+              "id": "e662d0f1-53a0-5c32-8c0f-5fcad15d5497",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f53c4cf3-f2e6-5ef4-805a-ec6de02a5eaf",
+          "frames": [
+            {
+              "id": "66bb0da1-0d09-52b0-85e9-1deb5e21faa0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f8ce1cd5-8677-5bbe-b099-3b5832963721",
+          "frames": [
+            {
+              "id": "bc59b0af-ccb3-52b9-90e1-d9026d33407b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ad062691-3045-5d01-808f-e3c96afb8594",
+          "frames": [
+            {
+              "id": "95e9acc8-503a-5839-ab24-d27ba937ef71",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "3efb3417-7cc5-51e7-ae56-6b3e753db922",
+          "frames": [
+            {
+              "id": "a64fda16-6623-5e7e-9092-cc2520ef1689",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "traveler.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "bcd1e3ac9b63fffc477f1df669c83c872f92c912"
+}

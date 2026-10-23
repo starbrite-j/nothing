@@ -1,0 +1,148 @@
+{
+  "_resourceType": "trigger",
+  "id": "6b7df556-2fb5-5449-b779-a6349c0b0433",
+  "_index": 0,
+  "symbol": "trigger_consent_gate",
+  "prefabId": "",
+  "name": "consent - Consent gate",
+  "x": 16,
+  "y": 8,
+  "width": 1,
+  "height": 5,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "eabbcbb2-1e32-5111-9b4c-7428df818705",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "5"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "c0f7ab8f-3a14-5d63-bb88-32acbda97181",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "8",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "id": "54379103-9949-5762-b94a-d947f3af5fdf",
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "frequency": 180,
+              "duration": 0.22,
+              "wait": true,
+              "priority": "medium"
+            }
+          },
+          {
+            "id": "807f549c-ea60-5460-ba44-6ee18e09973a",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "CRACK!\nA sign broke\nunder your foot."
+              ],
+              "textHeight": 3,
+              "minHeight": 5,
+              "maxHeight": 5
+            }
+          },
+          {
+            "id": "baceeaab-17dc-57f9-b1b9-a0539ffb1493",
+            "command": "EVENT_SAVE_DATA",
+            "args": {
+              "saveSlot": 0
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "50cbc917-a23c-5cee-9998-d957bedd0551",
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "835b05c7-d3e8-5c12-a5d0-a9a6745dfbde",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "2"
+                  }
+                }
+              ],
+              "load": [
+                {
+                  "id": "7c77b77c-b95a-57cd-b5e9-76739305c7b4",
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "835b05c7-d3e8-5c12-a5d0-a9a6745dfbde",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "2"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "5769b488-6859-56a5-8eb7-dfccc21e071c",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A traveler knows\nthe way out."
+              ],
+              "textHeight": 3,
+              "minHeight": 5,
+              "maxHeight": 5
+            }
+          },
+          {
+            "id": "b3f2d671-6a1a-5902-bfba-5a2aba0983e9",
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 13
+              },
+              "y": {
+                "type": "number",
+                "value": 10
+              },
+              "units": "tiles"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "leaveScript": []
+}

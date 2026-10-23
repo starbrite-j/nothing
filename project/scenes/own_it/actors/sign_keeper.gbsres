@@ -1,0 +1,277 @@
+{
+  "_resourceType": "actor",
+  "id": "879f6d71-3930-580d-988b-596e595380fe",
+  "_index": 0,
+  "symbol": "actor_sign_keeper",
+  "prefabId": "",
+  "name": "Sign keeper",
+  "coordinateType": "tiles",
+  "x": 9,
+  "y": 8,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "926c3fa9-9543-5af3-bf00-03ce92f3f54e",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "4a1f4a3e-d233-5c18-8742-bb7ad5e7ec82",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "7"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "9dd03885-b59a-576b-baa2-16836a04566d",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Fixed.\nHead east."
+              ],
+              "textHeight": 3,
+              "minHeight": 5,
+              "maxHeight": 5
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "163991e0-63c3-5e55-86a3-99664d061efe",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "6"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "c528984f-ff01-5339-83a5-9c708fa927c6",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "The sign still\nneeds fixing."
+                    ],
+                    "textHeight": 3,
+                    "minHeight": 5,
+                    "maxHeight": 5
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "404fecb0-06f2-5a2c-872f-0c0b002eac02",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You broke my\nsign. Nobody\nelse saw.",
+                      "Will you admit\nit?"
+                    ],
+                    "textHeight": 3,
+                    "minHeight": 5,
+                    "maxHeight": 5
+                  }
+                },
+                {
+                  "id": "8b38abf8-aa5c-58cb-9cbf-cff5e39e02bd",
+                  "command": "EVENT_CHOICE",
+                  "args": {
+                    "variable": "9",
+                    "trueText": "YES",
+                    "falseText": "NO"
+                  }
+                },
+                {
+                  "id": "3cbc7a45-fadf-50c2-b3da-db50c8f284c8",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "9"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "5bf5f067-7ee4-58d0-9ba5-a6d8f25a566f",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "6",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "3df58296-f3f4-552f-b258-2df0c3ab5c52",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Let's fix it.\nPress A at the\nbroken sign."
+                          ],
+                          "textHeight": 3,
+                          "minHeight": 5,
+                          "maxHeight": 5
+                        }
+                      },
+                      {
+                        "id": "02c190e3-ee25-509c-969f-df0ae2604561",
+                        "command": "EVENT_SAVE_DATA",
+                        "args": {
+                          "saveSlot": 0
+                        },
+                        "children": {
+                          "true": [],
+                          "load": [
+                            {
+                              "id": "1d8b4692-cf3f-53b4-abd3-f0ce33de3a5d",
+                              "command": "EVENT_SWITCH_SCENE",
+                              "args": {
+                                "sceneId": "835b05c7-d3e8-5c12-a5d0-a9a6745dfbde",
+                                "x": {
+                                  "type": "number",
+                                  "value": 9
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 10
+                                },
+                                "direction": "up",
+                                "fadeSpeed": "2"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "ae963939-c66e-5e38-a1f1-62c21c575742",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "0",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "6b2063f3-fa59-5b91-9425-8032a304f911",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "1",
+                          "value": {
+                            "type": "number",
+                            "value": 3
+                          }
+                        }
+                      },
+                      {
+                        "id": "10b5a07b-6627-5b9e-9cc7-d57d83ca4b97",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "10",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        }
+                      },
+                      {
+                        "id": "3907caee-91f6-5c84-b6dd-4eb264cdbe38",
+                        "command": "EVENT_SAVE_DATA",
+                        "args": {
+                          "saveSlot": 0
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "id": "7dcc00b3-ccee-5170-b661-3ebd26d525da",
+                              "command": "EVENT_SWITCH_SCENE",
+                              "args": {
+                                "sceneId": "e6815d2f-0042-5b62-a863-f1d71c35f3fd",
+                                "x": {
+                                  "type": "number",
+                                  "value": 2
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 12
+                                },
+                                "direction": "up",
+                                "fadeSpeed": "2"
+                              }
+                            }
+                          ],
+                          "load": [
+                            {
+                              "id": "e2f1fe52-175f-5589-8f01-b7a49572a59e",
+                              "command": "EVENT_SWITCH_SCENE",
+                              "args": {
+                                "sceneId": "e6815d2f-0042-5b62-a863-f1d71c35f3fd",
+                                "x": {
+                                  "type": "number",
+                                  "value": 2
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 12
+                                },
+                                "direction": "up",
+                                "fadeSpeed": "2"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

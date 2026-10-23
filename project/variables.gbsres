@@ -1,0 +1,61 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "Detour obligation",
+      "symbol": "var_detour_obligation"
+    },
+    {
+      "id": "1",
+      "name": "Question origin",
+      "symbol": "var_question_origin"
+    },
+    {
+      "id": "2",
+      "name": "Map accepted",
+      "symbol": "var_map_accepted"
+    },
+    {
+      "id": "3",
+      "name": "Map collected",
+      "symbol": "var_map_collected"
+    },
+    {
+      "id": "4",
+      "name": "Map returned",
+      "symbol": "var_map_returned"
+    },
+    {
+      "id": "5",
+      "name": "Consent respected",
+      "symbol": "var_consent_respected"
+    },
+    {
+      "id": "6",
+      "name": "Sign admitted",
+      "symbol": "var_sign_admitted"
+    },
+    {
+      "id": "7",
+      "name": "Sign repaired",
+      "symbol": "var_sign_repaired"
+    },
+    {
+      "id": "8",
+      "name": "Sign broken",
+      "symbol": "var_sign_broken"
+    },
+    {
+      "id": "9",
+      "name": "Choice",
+      "symbol": "var_choice"
+    },
+    {
+      "id": "10",
+      "name": "Detour instructions shown",
+      "symbol": "var_detour_instructions_shown"
+    }
+  ],
+  "constants": []
+}

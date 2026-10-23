@@ -1,0 +1,174 @@
+{
+  "_resourceType": "actor",
+  "id": "509ad638-cda6-5b33-9dc5-233921b28c7b",
+  "_index": 1,
+  "symbol": "actor_broken_sign",
+  "prefabId": "",
+  "name": "Broken sign",
+  "coordinateType": "tiles",
+  "x": 4,
+  "y": 8,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "2eba9bf8-da99-548b-ba64-0d620f74dc05",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "4e4f2907-fa59-54be-b095-8c89d7f81adb",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "7"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "6e9314cc-cce7-5005-a7fd-884ece4da03d",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The arrow points\nto the exit."
+              ],
+              "textHeight": 3,
+              "minHeight": 5,
+              "maxHeight": 5
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "c135a258-89ec-51e4-b16b-4a9a466160db",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "6"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "94994508-2819-5aa5-8032-639ea7863c43",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "7",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  }
+                },
+                {
+                  "id": "24457cd5-6d34-59c3-be8d-1393dcabf497",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Fixed! The arrow\nshows a gap in\nthe maze wall."
+                    ],
+                    "textHeight": 3,
+                    "minHeight": 5,
+                    "maxHeight": 5
+                  }
+                },
+                {
+                  "id": "0d373d7b-e0b5-58c3-8c4f-307d11fd59c9",
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "frequency": 660,
+                    "duration": 0.12,
+                    "wait": true,
+                    "priority": "medium"
+                  }
+                },
+                {
+                  "id": "54702a8b-6fe7-5706-aa41-b9a2a6b34b70",
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "frequency": 880,
+                    "duration": 0.12,
+                    "wait": true,
+                    "priority": "medium"
+                  }
+                },
+                {
+                  "id": "56302e89-0c87-5306-bd60-55267eb0caa7",
+                  "command": "EVENT_SAVE_DATA",
+                  "args": {
+                    "saveSlot": 0
+                  },
+                  "children": {
+                    "true": [],
+                    "load": [
+                      {
+                        "id": "a908386d-4228-5205-8343-18c99fffb25a",
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "835b05c7-d3e8-5c12-a5d0-a9a6745dfbde",
+                          "x": {
+                            "type": "number",
+                            "value": 4
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 10
+                          },
+                          "direction": "up",
+                          "fadeSpeed": "2"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "2eb5c6f1-4b82-5718-8e61-d2ca835ca476",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "A cracked sign.\nBetter own up."
+                    ],
+                    "textHeight": 3,
+                    "minHeight": 5,
+                    "maxHeight": 5
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

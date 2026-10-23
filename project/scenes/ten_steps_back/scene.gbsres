@@ -1,0 +1,129 @@
+{
+  "_resourceType": "scene",
+  "id": "89df2690-39f3-5dc7-8edd-3975813d427f",
+  "_index": 1,
+  "type": "TOPDOWN",
+  "name": "Ten Steps Back",
+  "symbol": "scene_ten_steps_back",
+  "x": 320,
+  "y": 0,
+  "width": 32,
+  "height": 20,
+  "backgroundId": "219c17f5-4c0f-5b74-8440-01d281039d1d",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "af4e8f23-7882-525e-8227-a51fd8026f2b",
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "a08f68d8-ed9b-5190-b927-f584a0a99a27",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "f3f415c3-28c7-5a15-aeb1-5faa75fa7d38",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "PAUSED\nSave checkpoint?"
+              ],
+              "textHeight": 3,
+              "minHeight": 5,
+              "maxHeight": 5
+            }
+          },
+          {
+            "id": "db168e1c-b687-546c-adf8-d3236a850a05",
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "9",
+              "trueText": "YES",
+              "falseText": "NO"
+            }
+          },
+          {
+            "id": "a43cf696-8e95-5467-a54d-c230b6295201",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "9"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "468639c9-1bac-53c3-ab00-76ff93615f63",
+                  "command": "EVENT_SAVE_DATA",
+                  "args": {
+                    "saveSlot": 0
+                  },
+                  "children": {
+                    "true": [],
+                    "load": [
+                      {
+                        "id": "1bc71942-3c08-53c0-9d4f-917b29769ed7",
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "89df2690-39f3-5dc7-8edd-3975813d427f",
+                          "x": {
+                            "type": "number",
+                            "value": 14
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 11
+                          },
+                          "direction": "up",
+                          "fadeSpeed": "2"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "366772b4-b35b-5324-a4f9-53d2ee8585dc",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Saved."
+                    ],
+                    "textHeight": 3,
+                    "minHeight": 5,
+                    "maxHeight": 5
+                  }
+                }
+              ],
+              "false": []
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f82+005+0f!009+0f5+007+0f5+005+0f!009+0f5+007+0f5+005+0f!009+0f5+007+0f5+005+0f4+003+0f8+007+0f5+001c+0f4+001c+0f4+001c+0f4+001c+0f4+001c+0f4+001c+0f6+004+0f4+005+0f6+005+0f8+004+0f4+005+0f6+005+0f8+004+0f4+005+0f6+005+0f8+004+0ff+005+0f44+"
+}

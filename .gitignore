@@ -1,0 +1,12 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+build/
+artifacts/
+*.sav
+*.state
+*.ram
+*.gbc.ram
+*.gbc.sav
+*.log

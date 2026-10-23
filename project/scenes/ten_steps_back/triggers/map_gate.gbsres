@@ -1,0 +1,66 @@
+{
+  "_resourceType": "trigger",
+  "id": "f7430cdd-5f1b-55e8-ace6-5b607df1d423",
+  "_index": 0,
+  "symbol": "trigger_map_gate",
+  "prefabId": "",
+  "name": "map - Map gate",
+  "x": 20,
+  "y": 8,
+  "width": 1,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "cf4d79c8-1d1c-5bd8-a29f-9e5c3c7f4344",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "ffa6c6e3-5736-5f46-bfdb-5f6f2fc05aab",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Path closed.\nAsk the owner."
+              ],
+              "textHeight": 3,
+              "minHeight": 5,
+              "maxHeight": 5
+            }
+          },
+          {
+            "id": "fc453d97-b00e-5914-9a53-596ea79dc6e1",
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 18
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "units": "tiles"
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "leaveScript": []
+}

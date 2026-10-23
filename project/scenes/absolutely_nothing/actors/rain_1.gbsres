@@ -1,0 +1,75 @@
+{
+  "_resourceType": "actor",
+  "id": "93b0239e-d538-5a22-98a5-9ed7460f4617",
+  "_index": 1,
+  "symbol": "actor_rain_1",
+  "prefabId": "",
+  "name": "Rain 1",
+  "coordinateType": "tiles",
+  "x": 5,
+  "y": 4,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "39a0ac4d-c3f4-5678-a389-a82d2e5e2456",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "id": "cbe6e568-e715-515a-8188-c93c3436b8a3",
+      "command": "EVENT_WAIT",
+      "args": {
+        "units": "frames",
+        "frames": {
+          "type": "number",
+          "value": 18
+        }
+      }
+    },
+    {
+      "id": "84a8d709-91a3-5727-b274-00d52ea67c2b",
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "units": "tiles"
+      }
+    },
+    {
+      "id": "478b056f-9fdb-58ac-a0af-2b21fb0c136f",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 16
+        },
+        "units": "tiles",
+        "collideWith": [],
+        "moveType": "vertical"
+      }
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}
